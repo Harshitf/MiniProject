@@ -26,6 +26,8 @@ WORKDIR /Backend
 
 # Copy JAR from build stage
 COPY --from=build /Backend/target/*.jar app.jar
+ENV SPRING_PROFILES_ACTIVE=prod
+
 
 # Expose port (change if your app uses a different port)
 EXPOSE 8080
