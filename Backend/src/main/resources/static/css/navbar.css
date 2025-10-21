@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #B4D4FF;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: large;
+    min-width: 480px;
+}
+.navbar a {
+    color: #176B87;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-decoration: none;
+    border: 2px solid #86B6F6;
+    padding: 5px;
+    border-radius: 10px;
+}
+.navbar a:hover {
+    color: #637AB9;
+    text-decoration: none;
+    scale: 1.2;
+    z-index: 10;
+
+}

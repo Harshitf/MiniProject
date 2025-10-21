@@ -1,0 +1,13 @@
+html,body{
+    background-color: #EEF5FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #176B87;
+}

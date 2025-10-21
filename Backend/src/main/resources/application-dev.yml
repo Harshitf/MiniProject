@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Backend
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+  web:
+    resources:
+      cache:
+        period: 0
+      chain:
+        cache: false
+  thymeleaf:
+    cache: false
