@@ -30,16 +30,16 @@ public class controller {
     }
     @PostMapping("/signup")
     @Transactional
-    public ResponseEntity<String> signUp(@ModelAttribute User user) {
+    public String signUp(@ModelAttribute User user) {
         if (userRepository.findByUsername(user.getUsername()).isPresent())
-            return ResponseEntity.status(HttpStatus.CONFLICT).body("User already exists");
+            return "user-exists";
         try {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
             userRepository.save(user);
         } catch (Exception e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
+            return "error";
         }
-        return ResponseEntity.ok().body("success");
+        return "redirect:/login?success";
     }
 
     @GetMapping("/")

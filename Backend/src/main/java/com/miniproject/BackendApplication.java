@@ -14,11 +14,11 @@ public class BackendApplication{
 //                .filename(".env." + profile)
 //                .ignoreIfMissing()
 //                .load();
+//        System.out.println(dotenv.get("DATABASE_URL"));
 //
 //        System.setProperty("DATABASE_PASSWORD", dotenv.get("DATABASE_PASSWORD"));
 //        System.setProperty("DATABASE_URL", dotenv.get("DATABASE_URL"));
 //        System.setProperty("DATABASE_USERNAME", dotenv.get("DATABASE_USERNAME"));
-//        System.setProperty("FRONTEND_URL", dotenv.get("FRONTEND_ORIGIN"));
         SpringApplication.run(BackendApplication.class, args);
     }
 }

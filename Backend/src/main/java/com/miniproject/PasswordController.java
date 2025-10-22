@@ -20,7 +20,6 @@ import java.util.List;
 @Slf4j
 public class PasswordController {
    private final PasswordRepository passwordRepository;
-   private final PasswordService passwordService;
    private final PasswordEntityMapper passwordEntityMapper;
 
 
@@ -71,16 +70,7 @@ public class PasswordController {
     }
 
 
-    @GetMapping("/get-details-by-word/{word}")
-    public ResponseEntity<?> getDetails(@PathVariable String word) throws Exception {
-        List<PasswordEntity> details = passwordService.findByCharacter(word);
-        for (PasswordEntity p : details) {
-            String password = p.getPassword();
-            p.setPassword(PasswordUtil.decrypt(password));
 
-        }
-        return ResponseEntity.ok(details);
-    }
 
     @PostMapping("/save-password-entry")
     @Transactional

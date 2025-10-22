@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6d1c3f6-aa22-4e00-8e87-b3bddb8fea44" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MiniProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/templates/user-exists.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/PasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/PasswordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/PasswordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +35,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Harshitf"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Harshitf&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Harshitf/MiniProject.git",
-    "accountId": "c724568f-20cf-46b5-a07d-8c71a19d9cb8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Harshitf/MiniProject.git&quot;,
+    &quot;accountId&quot;: &quot;c724568f-20cf-46b5-a07d-8c71a19d9cb8&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -68,11 +76,13 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Backend.executor": "Run",
     "Spring Boot.BackendApplication.executor": "Run",
     "Spring Boot.MiniProjectApplication.executor": "Run",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/hk/MiniProject/Backend/src/main/java/com/miniproject",
+    "last_opened_file_path": "E:/hk/gith/MiniProject",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -100,26 +110,15 @@
       <recent name="E:\hk\MiniProject\Backend\src\main\java\com\miniproject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\hk\gith\MiniProject\Backend\src\main\resources" />
       <recent name="E:\hk\MiniProject\Backend\src\main\resources\templates\fragments" />
       <recent name="E:\hk\MiniProject\Backend\src\main\resources\static\css" />
       <recent name="E:\hk\MiniProject\Backend\src\main\resources" />
       <recent name="E:\hk\MiniProject" />
-      <recent name="E:\hk\MiniProject\MiniProject" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.miniproject" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -147,6 +146,7 @@
       <workItem from="1760860898088" duration="7036000" />
       <workItem from="1760950834040" duration="3952000" />
       <workItem from="1761029549526" duration="10204000" />
+      <workItem from="1761122177575" duration="1433000" />
     </task>
     <servers />
   </component>

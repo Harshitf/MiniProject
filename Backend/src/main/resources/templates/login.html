@@ -14,6 +14,9 @@
     <div th:if="${param.logout}">
         <p style="color:green;">You have been logged out</p>
     </div>
+    <div th:if="${param.success}">
+        <p style="color:green;">Account created successfully! Please log in.</p>
+    </div>
 
     <form method="post" th:action="@{/login}">
         <div>
