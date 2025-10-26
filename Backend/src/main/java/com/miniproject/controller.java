@@ -17,30 +17,6 @@ import java.security.Principal;
 public class controller {
     private final UserRepository userRepository;
     private final PasswordRepository passwordRepository;
-    private final PasswordEncoder passwordEncoder;
-
-    @GetMapping("/login")
-    public String login() {
-        return "login";
-    }
-    @GetMapping("/signup")
-    public String signup(Model model) {
-        model.addAttribute("user", new User());
-        return "signup";
-    }
-    @PostMapping("/signup")
-    @Transactional
-    public String signUp(@ModelAttribute User user) {
-        if (userRepository.findByUsername(user.getUsername()).isPresent())
-            return "user-exists";
-        try {
-            user.setPassword(passwordEncoder.encode(user.getPassword()));
-            userRepository.save(user);
-        } catch (Exception e) {
-            return "error";
-        }
-        return "redirect:/login?success";
-    }
 
     @GetMapping("/")
     public String Dashboard(Model model, Principal principal) {

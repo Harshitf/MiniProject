@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6d1c3f6-aa22-4e00-8e87-b3bddb8fea44" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/miniproject/controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="thymeleaf" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,6 +141,7 @@
       <workItem from="1761029549526" duration="10204000" />
       <workItem from="1761122177575" duration="4288000" />
       <workItem from="1761233257826" duration="27000" />
+      <workItem from="1761486449971" duration="405000" />
     </task>
     <servers />
   </component>

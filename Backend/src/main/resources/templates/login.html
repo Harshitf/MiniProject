@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Login</title>
-    <link rel="stylesheet" th:href="@{/css/login.css(v=${#dates.createNow().getTime()})}" />
+    <link rel="stylesheet" th:href="@{/css/login.css}" />
 </head>
 <body>
 <div class="container">
@@ -18,7 +18,7 @@
         <p style="color:green;">Account created successfully! Please log in.</p>
     </div>
 
-    <form method="post" th:action="@{/login}">
+    <form method="post" th:action="@{/public/login}">
         <div>
             <label for="username">Username</label>
             <input id="username" name="username" required type="text"/>
@@ -32,7 +32,7 @@
         <button type="submit">Login</button>
     </form>
 
-    <p>Don't have an account? <a th:href="@{/signup}">Sign up here</a></p>
+    <p>Don't have an account? <a th:href="@{/public/signup}">Sign up here</a></p>
 </div>
 </body>
 </html>
