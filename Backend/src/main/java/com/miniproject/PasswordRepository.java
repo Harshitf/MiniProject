@@ -17,4 +17,5 @@ PasswordEntity findBySiteUrl(String website);
     List<PasswordEntity> findByKeyword(String keyword);
 
     void deleteAllByUserUsername(String username);
+    List<PasswordEntity> findByUserUsername(String name);
 }
