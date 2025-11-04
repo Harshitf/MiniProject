@@ -56,8 +56,8 @@ public class PasswordController {
        return "redirect:/password-list";
    }
    @GetMapping("/password-list")
-   public String passwordListForm(Model model) {
-      List<PasswordEntity> passwords = passwordRepository.findAll();
+   public String passwordListForm(Model model, Authentication authentication) {
+      List<PasswordEntity> passwords = passwordRepository.findByUserUsername(authentication.getName());
       List<PasswordDto> passwordDtos =  passwords.stream()
               .map(this::sneakyGetDto)
               .toList();
