@@ -39,6 +39,6 @@ public class AuthController {
         } catch (Exception e) {
             return "error";
         }
-        return "redirect:/login?success";
+        return "redirect:/public/login?success";
     }
 }
