@@ -34,7 +34,7 @@ public class controller {
         String username = principal.getName();
         passwordRepository.deleteAllByUserUsername(username);
         userRepository.deleteByUsername(username);
-        return "redirect:/login";
+        return "redirect:/public/login";
     }
 
     @GetMapping("delete-all")
