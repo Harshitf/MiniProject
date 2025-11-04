@@ -1,5 +1,6 @@
 package com.miniproject.configuration;
 
+import org.springframework.stereotype.Controller;
 import com.miniproject.User;
 import com.miniproject.UserRepository;
 import jakarta.transaction.Transactional;
