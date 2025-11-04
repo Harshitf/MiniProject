@@ -23,20 +23,21 @@ public class PasswordController {
    private final PasswordEntityMapper passwordEntityMapper;
 
 
-   @GetMapping("/search-password")
-   public String searchPassword(@RequestParam(value = "keyword",required = false) String keyword, Model model) {
-       if (keyword == null || keyword.trim().isEmpty()) {
-           model.addAttribute("message", "Please enter a keyword to search.");
-           return "search-password";
-       }
-       List<PasswordEntity> passwords=passwordRepository.findByKeyword(keyword);
-       if (passwords.isEmpty()) {
-           model.addAttribute("message", "No passwords found for '" + keyword + "'");
-       } else {
-           model.addAttribute("passwords", passwords);
-       }
-       return "search-password";
-   }
+    @GetMapping("/search-password")
+    public String searchPassword(@RequestParam(value = "keyword", required = false) String keyword, Model model,Authentication authentication) {
+        if (keyword == null || keyword.trim().isEmpty()) {
+            model.addAttribute("message", "Please enter a keyword to search.");
+            return "search-password";
+        }
+
+        List<PasswordEntity> passwords = passwordRepository.findByKeywordAndUserUsername(keyword,authentication.getName());
+        if (passwords.isEmpty()) {
+            model.addAttribute("message", "No passwords found for '" + keyword + "'");
+        } else {
+            model.addAttribute("passwords", passwords);
+        }
+        return "search-password";
+    }
 
    @GetMapping("/create-password-entry")
    public String passwordEntryForm(Model model) {
