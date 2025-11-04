@@ -6,15 +6,16 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface PasswordRepository extends JpaRepository<PasswordEntity,Long> {
-PasswordEntity findBySiteUrl(String website);
     long countByUserUsername(String username);
 
-    @Query("SELECT p FROM PasswordEntity p WHERE " +
-            "LOWER(p.siteUsername) LIKE LOWER(CONCAT('%', :keyword, '%')) OR " +
+   @Query("SELECT p FROM PasswordEntity p WHERE " +
+            "(LOWER(p.siteUsername) LIKE LOWER(CONCAT('%', :keyword, '%')) OR " +
             "LOWER(p.siteUrl) LIKE LOWER(CONCAT('%', :keyword, '%')) OR " +
             "LOWER(p.email) LIKE LOWER(CONCAT('%', :keyword, '%')) OR " +
-            "LOWER(p.notes) LIKE LOWER(CONCAT('%', :keyword, '%'))")
-    List<PasswordEntity> findByKeyword(String keyword);
+            "LOWER(p.notes) LIKE LOWER(CONCAT('%', :keyword, '%')))"+
+            "AND p.user.username = :name")
+    List<PasswordEntity> findByKeywordAndUserUsername(String keyword,String name);
+
 
     void deleteAllByUserUsername(String username);
     List<PasswordEntity> findByUserUsername(String name);
